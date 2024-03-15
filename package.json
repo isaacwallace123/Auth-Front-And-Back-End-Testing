@@ -1,0 +1,14 @@
+{
+  "name": "AuthProject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Isaac Wallace",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "start": "concurrently --kill-others \"cd Server && yarn start\" \"cd Client && yarn dev\"",
+    "dev": "concurrently --kill-others \"cd Server && yarn dev\" \"cd Client && yarn dev\""
+  }
+}
